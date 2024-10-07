@@ -1,0 +1,252 @@
+body {
+    background-color: white;
+}
+   
+.body_index {
+font-family: Arial, sans-serif;
+display: flex;
+height: 100vh;
+margin: 0;
+overflow: auto;
+background: white;
+}
+.sidebar {
+width: 15%;
+background-color: #007BFF;
+color: white;
+padding: 20px;
+box-sizing: border-box;
+height: 100%;
+position: fixed;
+align-items: center;
+justify-content: space-between;
+
+}
+.sidebar h1 {
+margin-top: 0;
+text-align: center; /* Añadido para centrar el título */
+}
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+width: 100%; /* Añadido para permitir que los elementos de la lista ocupen todo el ancho */
+}
+.sidebar ul li {
+margin-bottom: 10px;
+padding: 10px; /* Añadido para dar más cuerpo a los botones */
+background-color: #007BFF; /* Añadido para dar color a los botones */
+border-radius: 5px; /* Añadido para hacer los bordes de los botones redondeados */
+text-align: center; /* Añadido para centrar el texto de los botones */
+ /* Añadido para cambiar el cursor al pasar sobre los botones */
+}
+
+.sidebar .logo {
+width: 200px;
+height: 70px;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Añadido para centrar el logo horizontalmente */
+}
+.sidebar .logo img {
+max-width: 100%; /* Añadido para asegurar que la imagen no exceda el tamaño de la barra lateral */
+max-height: 100%; /* Añadido para asegurar que la imagen no exceda el tamaño de la barra lateral */
+}
+.sidebar .logout {
+margin-top: auto; /* Añadido para empujar el botón hacia abajo */
+padding: 15px; /* Color de fondo rojo para el botón de cerrar sesión */
+border-radius: 5px;
+text-align: center;
+position: absolute; /* Añadido para posicionar el botón en el pie de la barra lateral */
+bottom: 20px; /* Añadido para posicionar el botón en el pie de la barra lateral */
+width: 80%;
+}
+
+.main-content {
+width: 70%;
+display: flex; /* Añadido para centrar los elementos de la cuadrícula */
+justify-content: center; /* Añadido para centrar los elementos de la cuadrícula */
+align-items: center; /* Añadido para centrar los elementos de la cuadrícula */
+flex-wrap: wrap; /* Añadido para permitir que los elementos de la cuadrícula se envuelvan */
+padding: 20px;
+box-sizing: border-box;
+margin-left: 18%;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+
+.main-content .grid-item {
+background-color: #f0f0f0;
+padding: 20px;
+box-sizing: border-box;
+width: calc(80%); /* Añadido para hacer que cada elemento de la cuadrícula ocupe un tercio del espacio disponible, menos el espacio de relleno */
+margin: 20px; /* Añadido para dar espacio entre los elementos de la cuadrícula */
+border-radius: 20px;
+}
+.main-content .grid-item img {
+width: 100%;
+height: auto;
+}
+.column {
+width: 50%; /* Ajusta este valor según tus necesidades */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.grid-container {
+width: 100%;
+display: flex;
+background-color:white;
+flex-direction: column;
+align-items: center;
+}
+
+.grid-item {
+/* Tus estilos para los elementos de la cuadrícula */
+
+width:100%; /* Aumenta el tamaño de los elementos de la cuadrícula en un 25% */
+margin: auto; /* Centra los elementos de la cuadrícula horizontalmente */
+}
+
+ul li a {
+
+color: inherit; /* Hereda el color del texto del elemento padre */
+text-decoration: none; /* Elimina el subrayado del enlace */
+
+}
+.login-page {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #a1a1a1;
+}
+.login-container {
+width: 70%;
+height: 70%;
+display: flex;
+flex-direction: column;
+border-radius: 20px; /* Añadido para hacer los bordes redondeados */
+overflow: hidden;
+}
+
+.login-form {
+width: 100%;
+padding-bottom: 100px;
+background-color: white;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.login-form form {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+.login-form input[type="correo"],
+.login-form input[type="password"] {
+width: 80%;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 5px;
+}
+.login-form input[type="submit"]{
+width: 40%;
+padding: 10px;
+background-color: #007BFF;
+color: white;
+border: none;
+transition: opacity 0.3s;
+border-radius: 5px;
+}
+.login-form input[type="submit"]:hover{
+opacity: 0.7;
+}
+.button-container {
+display: flex;
+justify-content: space-between;
+width: 80%;
+}
+
+.image-container {
+width: 100%;
+height: 50%;
+background-color: #007BFF;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.image-container img {
+max-width: 70%;
+max-height: 70%;
+}
+
+@media (min-width: 768px) {
+.login-container {
+flex-direction: row;
+}
+.login-form, .image-container {
+padding: 0;
+width: 50%;
+height: 100%;
+}
+}
+.body_miscelaneos {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: auto;
+    background: white;
+}
+
+.main-content-miscelaneos {
+    width: 100%; /* Ajustado para ocupar todo el ancho disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main-content-miscelaneos .list-item-miscelaneos {
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: calc(80%); /* Ajustado para hacer que cada elemento de la lista ocupe el 80% del espacio disponible */
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+.main-content-miscelaneos .list-item-miscelaneos h2 {
+    font-size: 1.5em; /* Añadido para darle un tamaño adecuado al título */
+}
+
+.list-container-miscelaneos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-item-miscelaneos {
+    width:100%;
+    margin: auto;
+}
+.test{
+    margin-right: 30px;
+}
+.prueba{
+    background-color: #a1a1a1;
+}
